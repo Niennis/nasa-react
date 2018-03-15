@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Link, Redirect, withRouter, Switch } from 'react-router-dom';
-import {dailyImg} from './dailyImg';
-import {images} from './images';
+import { dailyImg } from './dailyImg';
+import { images } from './images';
 import ShowNews from './news'
 
 const NavBar = () => (
@@ -20,9 +20,5 @@ const NavBar = () => (
         </div>
     </Router>
 )
-
-
-
-
 
 export default NavBar;
