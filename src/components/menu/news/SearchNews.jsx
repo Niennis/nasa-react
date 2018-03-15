@@ -3,6 +3,8 @@ import React, { Component } from 'react';
 class SearchNews extends Component {
   render() {
     return (
+      <div className="row">
+      <div className="col-12">
       <div className="askNav">      
         <input className="inputWord" type="text" name="" placeholder="Search..." id="searchWord"></input>
         <select className="btn" name="sortBy" id="sortBy">
@@ -15,6 +17,8 @@ class SearchNews extends Component {
           <option value="es">Español</option>
         </select>        
         <button className="btn btn-primary" id="askNews">Ask for news</button>
+      </div>
+      </div>
       </div>
     );
   }

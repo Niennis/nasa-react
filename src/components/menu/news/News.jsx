@@ -1,36 +1,51 @@
 import React, { Component } from 'react';
+import _ from 'lodash';
+import DataNews from './FormatNews';
 
-const api_key = '19214f11097341d1ad450bb2ad214ce1';
-const url = 'https://newsapi.org/v2/everything?q=nasa%20science';
-
-// https://newsapi.org/v2/everything?apiKey=19214f11097341d1ad450bb2ad214ce1&q=nasa%20science&language=${language}&sortBy${sortBy}
-
+// const api_key = '19214f11097341d1ad450bb2ad214ce1';
+const url = 'https://newsapi.org/v2/everything?apiKey=19214f11097341d1ad450bb2ad214ce1&q=nasa%20science'
 
 class News extends Component {
   constructor() {
     super();
+    this.state = {
+
+      dataNews: null
+    };
   }
 
-  updateNews = () => {
-    const url_forecast = `${url}${api_key}`;
-    fetch(url_forecast).then(data => (data.json()))
-    .then(weather_data => {
-      console.log(weather_data);
-      const forecastData = transformForecast(weather_data);
-      console.log(forecastData);
-      this.setState({forecastData});
+  updateNews() {
+    fetch(url).then(data => (data.json()))
+    .then(response => {
+      console.log('holi',response);
+      // const dataNews = response.articles;
+      console.log('chao', response.articles);      
+      this.setState({dataNews: response.articles});
     });
   }
 
+ componentWillMount() {
+    this.updateNews(this.props.dataNews);
+  }
+
+  renderNews(dataNews) {
+      return(dataNews.map((news, index) =>
+      <div key={index}>
+        <DataNews url={news.url} title={news.title} img={news.urlToImage} description={news.description} date={news.publishedAt} source={news.source.name}>
+        </DataNews>
+      </div>
+    ))
+  }
+
+  renderProgress = () => {
+    return (<h3> Cargando noticias... </h3>)
+  }
+
   render() {
+    const {dataNews} = this.state;
     return (
-      <div className="row newDiv">
-        <div className="col-lg-12">
-          <h3 className="titleNews"><a href="${info.url}" class="urlNews">${info.title}</a></h3>
-          <h5 className="descriptioNres">${info.description}</h5>
-          <h6 className="dateNews">Date: ${info.publishedAt}.</h6>        
-          <h6 className="sourceNews"> Publicado en: ${info.source.name}</h6>
-        </div>
+        <div className="col-8">
+        {dataNews !== null ? this.renderNews(dataNews) : this.renderProgress()}
       </div>
     );
   }

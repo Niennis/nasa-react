@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { BrowserRouter as Router, Route, Link, Redirect, withRouter, Switch } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 import {dailyImg} from './dailyImg';
 import {images} from './images';
 import { ShowNews } from './news'
@@ -12,11 +12,7 @@ import {  Button, Collapse, Navbar,
   NavbarBrand,
   Nav,
   NavItem,
-  NavLink,
-  UncontrolledDropdown,
-  DropdownToggle,
-  DropdownMenu,
-  DropdownItem } from 'reactstrap';
+  NavLink } from 'reactstrap';
 import './login/styles.css';
 
 
@@ -89,7 +85,7 @@ class Login extends React.Component {
               </Nav>
               <Nav className="ml-auto" navbar>
                 <NavItem>
-                  <NavLink className="nav-item active" id="user-pic"><img className="rounded-circle userImg" src={this.state.user.photoURL} /></NavLink>
+                  <NavLink className="nav-item active" id="user-pic"><img className="rounded-circle userImg" src={this.state.user.photoURL} alt="user"/></NavLink>
                 </NavItem>
                 <NavItem>
                   <NavLink href="">{this.state.user.displayName} </NavLink>

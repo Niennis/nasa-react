@@ -1,4 +1,5 @@
 import React from 'react';
+import News from './News';
 import { Twitter } from './Twitter';
 import SearchNews from './SearchNews';
 
@@ -8,6 +9,13 @@ export const ShowNews = () => (
   <div>
     <h2>News</h2>
     <SearchNews/>
-    <Twitter/>
+    <div className="row">
+      <div className="col-12">
+        <div className="row">
+          <News/>
+          <Twitter/>
+        </div>
+      </div>    
+    </div>    
   </div>
 )

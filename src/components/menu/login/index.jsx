@@ -8,26 +8,21 @@ import {  Button, Collapse, Navbar,
   NavbarBrand,
   Nav,
   NavItem,
-  NavLink,
-  UncontrolledDropdown,
-  DropdownToggle,
-  DropdownMenu,
-  DropdownItem } from 'reactstrap';
+  NavLink } from 'reactstrap';
 import './styles.css';
 
 class Login extends React.Component {
   constructor() {
     super();
     this.state = {
-      username: '',
+      // username: '',
       user: null,
       isOpen: false      
     }
     this.handleChange = this.handleChange.bind(this);
     this.login = this.login.bind(this); 
     this.logout = this.logout.bind(this); 
-
-    this.userName
+    // this.userName
     this.toggle = this.toggle.bind(this);
   }
   toggle() {
@@ -79,7 +74,7 @@ class Login extends React.Component {
               </Nav>
               <Nav className="ml-auto" navbar>
                 <NavItem>
-                  <NavLink className="nav-item active" id="user-pic"><img className="rounded-circle userImg" src={this.state.user.photoURL} /></NavLink>
+                  <NavLink className="nav-item active" id="user-pic"><img className="rounded-circle userImg" src={this.state.user.photoURL} alt="user"/></NavLink>
                 </NavItem>
                 <NavItem>
                   <NavLink href="">{this.state.user.displayName} </NavLink>
