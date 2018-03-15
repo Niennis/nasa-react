@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import firebase, { auth, provider } from './components/services/configFirebase';
+// import firebase, { auth, provider } from './components/services/configFirebase';
 import Login from './components/menu/login/index'
 import './App.css';
 
