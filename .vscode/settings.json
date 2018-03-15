@@ -1,4 +1,5 @@
 {
   "git.ignoreLimitWarning": true,
-  "standard.enable": false
+  "standard.enable": false,
+  "eslint.enable": false
 }
