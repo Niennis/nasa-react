@@ -5,17 +5,17 @@ const url = 'https://newsapi.org/v2/everything?q=nasa%20science';
 
 // https://newsapi.org/v2/everything?apiKey=19214f11097341d1ad450bb2ad214ce1&q=nasa%20science&language=${language}&sortBy${sortBy}
 
-class index extends Component {
+class ShowNews extends Component {
 
 
 
   render() {
     return (
       <div>
-        
+        ShowNews
       </div>
     );
   }
 }
 
-export default index;
+export default ShowNews;
