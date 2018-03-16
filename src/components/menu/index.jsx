@@ -4,35 +4,25 @@ import DailyImg from './dailyImg';
 import SearchImg from './images';
 import { ShowNews } from './news'
 import firebase, { auth, provider } from './../services/configFirebase';
-// import PropTypes from 'prop-types';
-// import NavigationBar from './NavigationBar';
 import './../../../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import {  Button, Collapse, Navbar,
   NavbarToggler,
   NavbarBrand,
   Nav,
   NavItem,
-  NavLink,
-  UncontrolledDropdown,
-  DropdownToggle,
-  DropdownMenu,
-  DropdownItem } from 'reactstrap';
-import './login/styles.css';
-
+  NavLink } from 'reactstrap';
+import './news/styles.css';
 
 class Login extends React.Component {
   constructor() {
     super();
     this.state = {
-      username: '',
       user: null,
       isOpen: false      
     }
     this.handleChange = this.handleChange.bind(this);
     this.login = this.login.bind(this); 
     this.logout = this.logout.bind(this); 
-
-    this.userName
     this.toggle = this.toggle.bind(this);
   }
   toggle() {
@@ -89,7 +79,7 @@ class Login extends React.Component {
               </Nav>
               <Nav className="ml-auto" navbar>
                 <NavItem>
-                  <NavLink className="nav-item active" id="user-pic"><img className="rounded-circle userImg" src={this.state.user.photoURL} /></NavLink>
+                  <NavLink className="nav-item active" id="user-pic"><img className="rounded-circle userImg" src={this.state.user.photoURL} alt="user"/></NavLink>
                 </NavItem>
                 <NavItem>
                   <NavLink href="">{this.state.user.displayName} </NavLink>
@@ -131,37 +121,4 @@ Login.propTypes = {
   
 };
 
-// ForecastExtended.propTypes = {
-//   city: PropTypes.string.isRequired,
-// }
-
 export default Login;
-
-
-
-
-
-
-// const NavBar = () => (
-//   <Router>
-//     <div>
-//       <nav>
-//         <ul>
-//           <li><Link to="/dailyImg">Imagen del Día</Link></li>
-//           <li><Link to="/ShowNews">News</Link></li>
-//           <li><Link to="/images">Images</Link></li>
-//         </ul>
-//       </nav>
-      
-//       <Route path="/dailyImg" component={dailyImg}></Route>
-//       <Route path="/ShowNews" component={ShowNews}></Route>
-//       <Route path="/images" component={images}></Route>
-//     </div>
-//   </Router>
-// )
-
-
-
-
-
-// export default NavBar;
