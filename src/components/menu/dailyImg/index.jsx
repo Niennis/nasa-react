@@ -35,7 +35,7 @@ class DailyImg extends Component {
         return (
             <section className="container">
                 <div className="row">
-                    <div className="col-lg-12">
+                    <div className="col-lg-12 col-xs-12 ">
                         <div className="jumbotron jumbotron-fluid">
                             {
                                 items !== null ? this.renderDay(items) : 'cargando...'
