@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 import { urlSearchImages } from './../../services/nasaData';
 import { ImgResult } from './ImgResult';
-import SearchVoid from './SearchVoid';
 
 
-class SearchImg extends Component {
+
+class SearchVoid extends Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -14,8 +14,8 @@ class SearchImg extends Component {
     }
 
     getSearchImg() {
-       
-        fetch(`${urlSearchImages}q=sun`)
+        const searchPlanet = document.getElementById('searchPlanet').value;
+        fetch(`${urlSearchImages}q=${searchPlanet}`)
             .then(response => (response.json()))
             .then(data => {
                 console.log(data);
@@ -44,18 +44,17 @@ class SearchImg extends Component {
                         <h2 className="title2">Search Images</h2>
                         <div className="askNav text-center">
                             <input type="text" id="searchPlanet" className="form-control" ref="searchImg" />
-                            <button className="btn btn-primary" id="btnSearchPlanet" onClick = {this.getSearchImg}>Buscar</button>
+                            <button className="btn btn-primary" id="btnSearchPlanet">Buscar</button>
                         </div>
                     </div>
                 </div>
                 <div className="row" id="images">
                     {
-                        images !== null ? this.renderImg(images) : <SearchVoid/>
+                        images !== null ? this.renderImg(images) : 'cargando..'
                     }
                 </div>
             </section>
         )
     }
 }
-
-export default SearchImg;
+export default SearchVoid

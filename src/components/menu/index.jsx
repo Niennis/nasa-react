@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
-import {dailyImg} from './dailyImg';
-import {images} from './images';
+import { BrowserRouter as Router, Route, Link, Redirect, withRouter, Switch } from 'react-router-dom';
+import DailyImg from './dailyImg';
+import SearchImg from './images';
 import { ShowNews } from './news'
 import firebase, { auth, provider } from './../services/configFirebase';
 import './../../../node_modules/bootstrap/dist/css/bootstrap.min.css';
@@ -70,11 +70,11 @@ class Login extends React.Component {
         <Router>
           <div>
           <Navbar color="faded" light expand="md">
-            <Link className="nasaTitle" to="/dailyImg">NASA</Link>
+            <NavItem><Link to="/DailyImg">NASA</Link></NavItem>
             <NavbarToggler onClick={this.toggle} />
             <Collapse isOpen={this.state.isOpen} navbar>
               <Nav className="ml-left" navbar>
-                <NavItem className="links"><Link to="/images">Images</Link></NavItem>
+                <NavItem className="links"><Link to="/SearchImg">Images</Link></NavItem>
                 <NavItem className="links" id="newsLink" href=""><Link to="/ShowNews">News</Link></NavItem>
               </Nav>
               <Nav className="ml-auto" navbar>
@@ -90,9 +90,9 @@ class Login extends React.Component {
               </Nav>
             </Collapse>
           </Navbar>
-          <Route path="/dailyImg" component={dailyImg}></Route>
+          <Route path="/DailyImg" component={DailyImg}></Route>
           <Route path="/ShowNews" component={ShowNews}></Route>
-          <Route path="/images" component={images}></Route>
+          <Route path="/SearchImg" component={SearchImg}></Route>
           </div>
         </Router>
         ) : (     
