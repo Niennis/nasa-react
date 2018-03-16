@@ -1,5 +1,13 @@
-
-
+.card-header, .card-footer{
+  background-color: #301472;
+}
+#sign-in{
+  background-color: #1da7a7;
+  border: none;
+}
+#sign-in:hover{
+  background-color: #301472;
+}
 
 /* -------------------------------------------- */
 .navbar{
@@ -27,7 +35,7 @@
   color: white;
   border-radius: 1vh;
 }
-#userPic{
+#userPic img{
   display: inline-block;
   width: 40px;
   height: 40px;;

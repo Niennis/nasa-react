@@ -64,7 +64,7 @@ class SearchNewsBar extends Component {
               <button className="btn btn-primary" id="askNews" onClick={(e) => {this.handleSearch();}}>Ask for news</button>
             </div>
             <div className="row">
-              <div className="col-8">
+              <div className="col-lg-9 col-md-9 col-sm-12 col-xs-12">
                 {input !== null ? this.renderNews(input) : <News/>}
               </div>
               <Twitter/>
