@@ -40,7 +40,7 @@ class News extends Component {
   render() {
     const {dataNews} = this.state;
     return (
-        <div className="col-8">
+        <div className="col-lg-9 col-md-9 col-sm-12 col-xs-12">
         {dataNews !== null ? this.renderNews(dataNews) : this.renderProgress()}
       </div>
     );

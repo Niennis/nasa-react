@@ -70,19 +70,19 @@ class Login extends React.Component {
         <Router>
           <div>
           <Navbar color="faded" light expand="md">
-            <NavItem><Link to="/DailyImg">NASA</Link></NavItem>
+            <Link className="nasaTitle" to="/DailyImg">NASA</Link>
             <NavbarToggler onClick={this.toggle} />
             <Collapse isOpen={this.state.isOpen} navbar>
               <Nav className="ml-left" navbar>
-                <NavItem className="links"><Link to="/SearchImg">Images</Link></NavItem>
-                <NavItem className="links" id="newsLink" href=""><Link to="/ShowNews">News</Link></NavItem>
+                <NavItem><Link to="/SearchImg" className="links">Images</Link></NavItem>
+                <NavItem id="newsLink" href=""><Link to="/ShowNews" className="links">News</Link></NavItem>
               </Nav>
               <Nav className="ml-auto" navbar>
-                <NavItem>
-                  <NavLink className="nav-item active" id="user-pic"><img className="rounded-circle userImg" src={this.state.user.photoURL} alt="user"/></NavLink>
+                <NavItem className="nav-item active" id="userPic">
+                  <img className="rounded-circle userImg" src={this.state.user.photoURL} alt="user"/>
                 </NavItem>
-                <NavItem>
-                  <NavLink href="">{this.state.user.displayName} </NavLink>
+                <NavItem className="userName" href="">
+                  {this.state.user.displayName}
                 </NavItem>
                 <NavItem>
                   <Button id="signOut" className="btn btn-primary my-2 my-sm-0" onClick={this.logout}>Logout</Button>

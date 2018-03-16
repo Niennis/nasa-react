@@ -23,7 +23,7 @@ NasaNews es una aplicación para poder mantenerte no solo informado sobre temas 
 
 ## **```Ambiente de Desarrollo```**
 
-Utilizamos Node como entorno de ejecución.
+Utilizamos Javascript en VSCode para escribir nuestro proyecto. 
 
 
 ## **```React```**
@@ -38,4 +38,7 @@ Se usó **```Firebase```** tanto para crear un login, como para realizar el depl
 
 ## **```Wireframe```**
 
+![Img1](./src/components/img/wf01.png)
+![Img2](./src/components/img/wf02.png)
+![Img3](./src/components/img/wf03.png)
 

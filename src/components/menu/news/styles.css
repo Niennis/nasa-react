@@ -1,6 +1,15 @@
-.userImg{
-  width: 40px;
+.card-header, .card-footer{
+  background-color: #301472;
 }
+#sign-in{
+  background-color: #1da7a7;
+  border: none;
+}
+#sign-in:hover{
+  background-color: #301472;
+}
+
+/* -------------------------------------------- */
 .navbar{
   background-color: #1da7a7;
 }
@@ -26,14 +35,14 @@
   color: white;
   border-radius: 1vh;
 }
-#user-pic{
+#userPic img{
   display: inline-block;
   width: 40px;
   height: 40px;;
   background-size: cover;
   border-radius: 50%;
 }
-#user-name{
+.userName{
   padding: 1vh;
   color: white;
 }
@@ -50,8 +59,14 @@
   color: white;
   border-color: #301472;
 }
-#newsLink{
-  color: green;
+.links{
+  border-radius: 0.5vh;
+  padding: 1vh;
+  margin: 0 1vh;
+}
+.links:hover{
+  background-color: #301472;
+  text-decoration: unset;
 }
 .askNav{
   background-color: #1da7a7;
@@ -95,5 +110,22 @@
 }
 .inputWord::placeholder{
   padding-left: 1vh;
+  color: #1da7a7;
+}
+h2{
+  color: white;
+  margin: 2vh 16vh;
+  font-weight: bold;
+}
+/* ---------------------- Twitter */
+.twitter{
+  border: 1px solid white;
+  border: 1vh;
+  background-color: white;
+}
+.twitter a{
+  color: #301472
+}
+.twitter a{
   color: #1da7a7;
 }
