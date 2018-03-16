@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import firebase, { auth, provider } from './../../services/configFirebase';
 // import PropTypes from 'prop-types';
-// import NavigationBar from './NavigationBar';
 import './../../../../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import {  Button, Collapse, Navbar,
   NavbarToggler,
@@ -9,7 +8,7 @@ import {  Button, Collapse, Navbar,
   Nav,
   NavItem,
   NavLink } from 'reactstrap';
-import './styles.css';
+// import './styles.css';
 
 class Login extends React.Component {
   constructor() {

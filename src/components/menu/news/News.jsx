@@ -9,7 +9,6 @@ class News extends Component {
   constructor() {
     super();
     this.state = {
-
       dataNews: null
     };
   }

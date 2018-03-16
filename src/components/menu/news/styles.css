@@ -1,4 +1,4 @@
-/* .userImg{
+.userImg{
   width: 40px;
 }
 .navbar{
@@ -40,4 +40,7 @@
 }
 #newsLink{
   color: green;
-} */
+}
+.askNav{
+  border: 1px solid salmon;
+}
