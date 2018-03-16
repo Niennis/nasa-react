@@ -1,0 +1,16 @@
+.imgdiv{
+    margin-top: 1em
+  }
+ .titleday{
+    color: #1da7a7;
+  }
+  .title2{
+    color: #fff;
+  }
+  #searchPlanet{
+    width: 60%;
+    display: inline-block
+  }
+  .imgDay{
+    display: block;
+  }
