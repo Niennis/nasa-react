@@ -52,12 +52,12 @@ class SearchNewsBar extends Component {
           <div className="col-12">        
             <div className="askNav">      
               <input className="inputWord" type="text" ref="inputNews" placeholder="Search..." id="searchWord"  ></input>
-              <select className="btn" ref="order" id="sortBy">
+              <select className="btn btnSelect" ref="order" id="sortBy">
                 <option value="relevancy">Relevancia</option>
                 <option value="popularity">Más populares</option>
                 <option value="newest">Más nuevas</option>
               </select>      
-              <select className="btn" name="" ref="language">Language
+              <select className="btn btnSelect" name="" ref="language">Language
                 <option value="en">English</option>
                 <option value="es">Español</option>
               </select>         

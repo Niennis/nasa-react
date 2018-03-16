@@ -11,8 +11,7 @@ import {  Button, Collapse, Navbar,
   Nav,
   NavItem,
   NavLink } from 'reactstrap';
-import './login/styles.css';
-
+import './news/styles.css';
 
 class Login extends React.Component {
   constructor() {
@@ -71,7 +70,7 @@ class Login extends React.Component {
         <Router>
           <div>
           <Navbar color="faded" light expand="md">
-            <NavItem><Link to="/dailyImg">NASA</Link></NavItem>
+            <Link className="nasaTitle" to="/dailyImg">NASA</Link>
             <NavbarToggler onClick={this.toggle} />
             <Collapse isOpen={this.state.isOpen} navbar>
               <Nav className="ml-left" navbar>
