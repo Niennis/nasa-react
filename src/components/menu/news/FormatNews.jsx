@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
+import './styles.css';
 
 const DataNews = ( {url, title, img, description, date, source}) => (
   <div className="dataContainer">

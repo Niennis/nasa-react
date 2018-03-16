@@ -11,7 +11,7 @@ import {  Button, Collapse, Navbar,
   Nav,
   NavItem,
   NavLink } from 'reactstrap';
-import './news/styles.css';
+import './styles.css';
 
 class Login extends React.Component {
   constructor() {

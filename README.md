@@ -35,6 +35,8 @@ Utilizamos react para crear tanto componentes funcionales como de clase, princip
 
 Se usó **```Firebase```** tanto para crear un login, como para realizar el deploy de la aplicación.
 
+Link al proyecto [NASANews](https://project-nasa-news.firebaseapp.com/)
+
 
 ## **```Wireframe```**
 

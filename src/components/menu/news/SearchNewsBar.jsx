@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import News from './News';
 import DataNews from './FormatNews';
 import { Twitter } from './Twitter';
+import './styles.css';
 
 const url = 'https://newsapi.org/v2/everything?apiKey=19214f11097341d1ad450bb2ad214ce1&q=nasa%20science%20';
 

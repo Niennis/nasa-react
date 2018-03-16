@@ -5,7 +5,7 @@ import './styles.css';
 
 export const ShowNews = () => (
   <div>
-    <h2>News</h2>
+    <h2 className="newsBigTitle">News</h2>
       <SearchNewsBar/>
   </div>
 )
