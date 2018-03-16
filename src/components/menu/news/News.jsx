@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import _ from 'lodash';
 import DataNews from './FormatNews';
 
-// const api_key = '19214f11097341d1ad450bb2ad214ce1';
 const url = 'https://newsapi.org/v2/everything?apiKey=19214f11097341d1ad450bb2ad214ce1&q=nasa%20science'
 
 class News extends Component {
@@ -16,9 +15,7 @@ class News extends Component {
   updateNews() {
     fetch(url).then(data => (data.json()))
     .then(response => {
-      console.log('holi',response);
-      // const dataNews = response.articles;
-      console.log('chao', response.articles);      
+      console.log(response);     
       this.setState({dataNews: response.articles});
     });
   }

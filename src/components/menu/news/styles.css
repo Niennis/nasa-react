@@ -42,5 +42,9 @@
   color: green;
 }
 .askNav{
-  border: 1px solid salmon;
+  background-color: #1da7a7;
+  border: 1px solid #1da7a7;
+  border-radius: 1vh 1vh 0 0 ;
+  padding: 1vh;
+  margin: 0  0 1vh;
 }

@@ -10,42 +10,14 @@ class SearchNewsBar extends Component {
     super();
     this.state = {
       input: null,
-      // order: '',
-      // language: '',
     }
   }
-/*
-  // handleInput = (event) => {
-  //   console.log(event.target.value)    
-  //   this.setState({
-  //     input: event.target.value,
-  //   })
-  // }
-
-  // handleOrder = (event) => {
-  //   console.log(event.target.value)
-  //   this.setState({
-  //     order: event.target.value,
-  //   })
-  // }
-
-  // handleLanguage = (event) => {
-  //   console.log(event.target.value)
-  //   this.setState({
-  //     language: event.target.value,
-  //   })
-  // }
-
-*/
 
   handleSearch() {
     console.log('asohdoaishdaosdhaoñshdñaoshdoñi')
     const inputNews = this.refs.inputNews.value;
     const language = this.refs.language.value;
     const order = this.refs.order.value;
-    console.log(language)
-    console.log(inputNews)
-    console.log(order)
     fetch(`${url}${inputNews}&language=${language}&sortBy=${order}`)
     .then(data => (data.json())) 
     .then(response => {
@@ -75,7 +47,7 @@ class SearchNewsBar extends Component {
     const {input} = this.state;
     
     return (
-      <div>
+      <div className="container">
         <div className="row">
           <div className="col-12">        
             <div className="askNav">      

@@ -4,8 +4,6 @@ import {dailyImg} from './dailyImg';
 import {images} from './images';
 import { ShowNews } from './news'
 import firebase, { auth, provider } from './../services/configFirebase';
-// import PropTypes from 'prop-types';
-// import NavigationBar from './NavigationBar';
 import './../../../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import {  Button, Collapse, Navbar,
   NavbarToggler,
@@ -20,15 +18,12 @@ class Login extends React.Component {
   constructor() {
     super();
     this.state = {
-      username: '',
       user: null,
       isOpen: false      
     }
     this.handleChange = this.handleChange.bind(this);
     this.login = this.login.bind(this); 
     this.logout = this.logout.bind(this); 
-
-    this.userName
     this.toggle = this.toggle.bind(this);
   }
   toggle() {
@@ -127,37 +122,4 @@ Login.propTypes = {
   
 };
 
-// ForecastExtended.propTypes = {
-//   city: PropTypes.string.isRequired,
-// }
-
 export default Login;
-
-
-
-
-
-
-// const NavBar = () => (
-//   <Router>
-//     <div>
-//       <nav>
-//         <ul>
-//           <li><Link to="/dailyImg">Imagen del Día</Link></li>
-//           <li><Link to="/ShowNews">News</Link></li>
-//           <li><Link to="/images">Images</Link></li>
-//         </ul>
-//       </nav>
-      
-//       <Route path="/dailyImg" component={dailyImg}></Route>
-//       <Route path="/ShowNews" component={ShowNews}></Route>
-//       <Route path="/images" component={images}></Route>
-//     </div>
-//   </Router>
-// )
-
-
-
-
-
-// export default NavBar;

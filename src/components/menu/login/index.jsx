@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import firebase, { auth, provider } from './../../services/configFirebase';
-// import PropTypes from 'prop-types';
+import PropTypes from 'prop-types';
 import './../../../../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import {  Button, Collapse, Navbar,
   NavbarToggler,
@@ -107,11 +107,7 @@ class Login extends React.Component {
 }
 
 Login.propTypes = {
-  
+  user: PropTypes.string.isRequired,
 };
-
-// ForecastExtended.propTypes = {
-//   city: PropTypes.string.isRequired,
-// }
 
 export default Login;
