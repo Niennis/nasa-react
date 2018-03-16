@@ -1,21 +1,13 @@
-import React, { Component } from 'react';
-
-const api_key = '19214f11097341d1ad450bb2ad214ce1';
-const url = 'https://newsapi.org/v2/everything?q=nasa%20science';
+import React from 'react';
+import { Twitter } from './Twitter';
+import SearchNews from './SearchNews';
 
 // https://newsapi.org/v2/everything?apiKey=19214f11097341d1ad450bb2ad214ce1&q=nasa%20science&language=${language}&sortBy${sortBy}
 
-class ShowNews extends Component {
-
-
-
-  render() {
-    return (
-      <div>
-        ShowNews
-      </div>
-    );
-  }
-}
-
-export default ShowNews;
+export const ShowNews = () => (
+  <div>
+    <h2>News</h2>
+    <SearchNews/>
+    <Twitter/>
+  </div>
+)
