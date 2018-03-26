@@ -1,5 +1,10 @@
 # **```NASANEWS```** 
 
+## **```Proyecto```**
+
+NasaNews es una aplicación para poder mantenerte no solo informado sobre temas relacionados a la astronomía, sino que además, puedes acceder a la gran cantidad de imágenes disponibles de la **```Nasa```**, y a las últimas noticias publicadas en su cuenta de **```Twitter```**.
+
+![nasa](https://user-images.githubusercontent.com/32283958/37888129-044718a4-309c-11e8-9493-39c85ca5eeed.png)
 
 ## **```Dependencias y herramientas```**
 
@@ -14,12 +19,6 @@
 ![Reactstrap](https://img.shields.io/badge/reactstrap-v5.0.0-301472.svg)
 ![Firebase](https://img.shields.io/badge/bootstrap-v4.11.0-034b86.svg)
 
-
-## **```Proyecto```**
-
-NasaNews es una aplicación para poder mantenerte no solo informado sobre temas relacionados a la astronomía, sino que además, puedes acceder a la gran cantidad de imágenes disponibles de la **```Nasa```**, y a las últimas noticias publicadas en su cuenta de **```Twitter```**.
-
-![nasa](https://user-images.githubusercontent.com/32283958/37888129-044718a4-309c-11e8-9493-39c85ca5eeed.png)
 
 ## **```Ambiente de Desarrollo```**
 
