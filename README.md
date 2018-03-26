@@ -1,4 +1,3 @@
-![nasa](https://user-images.githubusercontent.com/32283958/37888129-044718a4-309c-11e8-9493-39c85ca5eeed.png)
 # **```NASANEWS```** 
 
 
@@ -20,6 +19,7 @@
 
 NasaNews es una aplicación para poder mantenerte no solo informado sobre temas relacionados a la astronomía, sino que además, puedes acceder a la gran cantidad de imágenes disponibles de la **```Nasa```**, y a las últimas noticias publicadas en su cuenta de **```Twitter```**.
 
+![nasa](https://user-images.githubusercontent.com/32283958/37888129-044718a4-309c-11e8-9493-39c85ca5eeed.png)
 
 ## **```Ambiente de Desarrollo```**
 
