@@ -6,6 +6,10 @@ NasaNews es una aplicación para poder mantenerte no solo informado sobre temas 
 
 ![nasa](https://user-images.githubusercontent.com/32283958/37888129-044718a4-309c-11e8-9493-39c85ca5eeed.png)
 
+## Desarrollado para 
+[Laboratoria](http://laboratoria.la)
+
+
 ## **```Dependencias y herramientas```**
 
 ![Javascript](https://img.shields.io/badge/javascript-ecma6-008080.svg)
@@ -36,8 +40,6 @@ Se usó **```Firebase```** tanto para crear un login, como para realizar el depl
 
 Link al proyecto [NASANews](https://project-nasa-news.firebaseapp.com/)
 
-## Desarrollado para 
-[Laboratoria](http://laboratoria.la)
 
 ## **```Wireframe```**
 
