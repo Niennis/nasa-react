@@ -1,4 +1,4 @@
-# **```NASANEWS```** 
+# NASANEWS
 
 ## **```Proyecto```**
 
@@ -36,6 +36,8 @@ Se usó **```Firebase```** tanto para crear un login, como para realizar el depl
 
 Link al proyecto [NASANews](https://project-nasa-news.firebaseapp.com/)
 
+## Desarrollado para 
+[Laboratoria](http://laboratoria.la)
 
 ## **```Wireframe```**
 
